@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container con">
+      <div class="row content">
+        <div class="col-xs-12">
+          <h2>To Do List</h2>
+        </div>
+        <form id="create-task" class="create-task">
+          <input
+            class="task-input"
+            id="new-task-content"
+            type="text"
+            placeholder="type task name to create"
+            required
+          />
+          <button class="btn btn-success">Create</button>
+        </form>
+        <br />
+        <div id="todo-list" class="todo-list"></div>
+        <div class="filter">
+          <form>
+            <select id="tasks" name="tasks">
+              <option value="all">All tasks</option>
+              <option value="active">Active tasks</option>
+              <option value="completed">Completed tasks</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </div>    
+  </body>
+</html>
